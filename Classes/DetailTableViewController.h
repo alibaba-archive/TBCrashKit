@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CrashModel.h"
 
 @interface DetailTableViewController : UITableViewController
+
+@property (nonatomic, strong) CrashModel *model;
 
 @end

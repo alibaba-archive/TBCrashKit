@@ -20,8 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-
     [TBCrashKit crash];
 //    NSArray *array = [[NSArray alloc] init];
 //    array[10];
@@ -29,7 +27,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[TBCrashTableViewController alloc] init]];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
