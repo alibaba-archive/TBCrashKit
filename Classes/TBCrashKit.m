@@ -107,29 +107,13 @@ static void removeHandlers() {
 }
 
 static void uncaughtExceptionHandler(NSException *exception) {
-    //    NSArray *array = callstackAsArray();
     removeHandlers();
-    NSLog(@"%@",exception);
-    NSLog(@"%@",exception.reason);
-    NSLog(@"%@",exception.name);
-    NSLog(@"%@",exception.userInfo);
-//    [TBCrashKit ha]
     [TBCrashKit handleException:exception stackTrace:[TBCrashKit callstackToArray]];
-    
-    //    NSLog(@"%@",);
 }
 
-static void handleSignal(int signal)
-{
+static void handleSignal(int signal) {
     removeHandlers();
-    
-    
     [TBCrashKit handleSignal:signal stackTrace:[TBCrashKit callstackToArray]];
-    //    NSArray* stackTrace = [[StackTracer sharedInstance] generateTraceWithMaxEntries:kStackFramesToCapture];
-    //    [[CrashManager sharedInstance] handleSignal:signal stackTrace:stackTrace];
-    //
-    //    [pool drain];
-    // Note: A signal doesn't need to be re-raised like an exception does.
 }
 
 @implementation TBCrashKit
@@ -174,8 +158,6 @@ static void handleSignal(int signal)
                       [exception name],
                       [exception reason],
                       stackTrace];
-    
-    NSLog(@"%@",data);
     NSError *error = nil;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,  NSUserDomainMask, YES);
     NSString *cachesDirectoryPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Caches"];
