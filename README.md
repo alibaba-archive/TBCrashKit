@@ -1,5 +1,7 @@
 # TBCrashKit
 
+[![Build Status](https://travis-ci.org/teambition/TBCrashKit.svg)](https://travis-ci.org/teambition/TBCrashKit)
+
 #How to Use
 
 add `libsqlite3.tbd` to your project
