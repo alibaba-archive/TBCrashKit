@@ -158,7 +158,7 @@
         char *sql = "SELECT * FROM crashTable";
         if (sqlite3_prepare_v2(_database, sql, -1, &statement, NULL) != SQLITE_OK) {
             NSLog(@"Error: failed to prepare statement with message:get testValue.");
-            return NO;
+            return nil;
         }
         else {
             //查询结果集中一条一条的遍历所有的记录，这里的数字对应的是列值,注意这里的列值，跟上面sqlite3_bind_text绑定的列值不一样！一定要分开，不然会crash，只有这一处的列号不同，注意！

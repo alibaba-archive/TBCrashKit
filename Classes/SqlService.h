@@ -14,10 +14,10 @@
 
 @property (nonatomic) sqlite3 *database;
 
--(BOOL )createTestList:(sqlite3 *)db;//创建数据库
+//-(BOOL )createTestList:(sqlite3 *)db;//创建数据库
 -(BOOL )insertCreashModel:(CrashModel *)model;//插入数据
--(BOOL )updateCreashModel:(CrashModel *)model;//更新数据
+//-(BOOL )updateCreashModel:(CrashModel *)model;//更新数据
 -(NSArray *)getCreashModels;//获取全部数据
-- (BOOL )deleteCreashModel:(CrashModel *)model;//删除数据：
+//- (BOOL )deleteCreashModel:(CrashModel *)model;//删除数据
 
 @end

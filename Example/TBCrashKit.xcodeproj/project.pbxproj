@@ -17,6 +17,8 @@
 		E5D2ACCE1C0433C0005C48E8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D2ACCD1C0433C0005C48E8 /* libsqlite3.tbd */; };
 		E5D2ACD31C0441F5005C48E8 /* sqlService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACCF1C0441F5005C48E8 /* sqlService.m */; };
 		E5D2ACD41C0441F5005C48E8 /* CrashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD21C0441F5005C48E8 /* CrashModel.m */; };
+		E5D2ACDA1C0446D1005C48E8 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */; };
+		E5D2ACDD1C0446F6005C48E8 /* TBCrashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		E5D2ACD01C0441F5005C48E8 /* SqlService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SqlService.h; path = ../../Classes/SqlService.h; sourceTree = "<group>"; };
 		E5D2ACD11C0441F5005C48E8 /* CrashModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrashModel.h; path = ../../Classes/CrashModel.h; sourceTree = "<group>"; };
 		E5D2ACD21C0441F5005C48E8 /* CrashModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrashModel.m; path = ../../Classes/CrashModel.m; sourceTree = "<group>"; };
+		E5D2ACD81C0446D1005C48E8 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailTableViewController.h; path = ../../Classes/DetailTableViewController.h; sourceTree = "<group>"; };
+		E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailTableViewController.m; path = ../../Classes/DetailTableViewController.m; sourceTree = "<group>"; };
+		E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBCrashTableViewController.m; path = ../../Classes/TBCrashTableViewController.m; sourceTree = "<group>"; };
+		E5D2ACDC1C0446F6005C48E8 /* TBCrashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBCrashTableViewController.h; path = ../../Classes/TBCrashTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +102,16 @@
 		E5D2ACC11C040361005C48E8 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				E5D2ACCF1C0441F5005C48E8 /* sqlService.m */,
-				E5D2ACD01C0441F5005C48E8 /* SqlService.h */,
-				E5D2ACD11C0441F5005C48E8 /* CrashModel.h */,
-				E5D2ACD21C0441F5005C48E8 /* CrashModel.m */,
 				E5D2ACC21C0403A0005C48E8 /* TBCrashKit.h */,
 				E5D2ACC31C0403A0005C48E8 /* TBCrashKit.m */,
+				E5D2ACD01C0441F5005C48E8 /* SqlService.h */,
+				E5D2ACCF1C0441F5005C48E8 /* sqlService.m */,
+				E5D2ACD11C0441F5005C48E8 /* CrashModel.h */,
+				E5D2ACD21C0441F5005C48E8 /* CrashModel.m */,
+				E5D2ACDC1C0446F6005C48E8 /* TBCrashTableViewController.h */,
+				E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */,
+				E5D2ACD81C0446D1005C48E8 /* DetailTableViewController.h */,
+				E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -176,10 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D2ACDA1C0446D1005C48E8 /* DetailTableViewController.m in Sources */,
 				E5D2ACB21C0402C4005C48E8 /* ViewController.m in Sources */,
 				E5D2ACD41C0441F5005C48E8 /* CrashModel.m in Sources */,
 				E5D2ACAF1C0402C4005C48E8 /* AppDelegate.m in Sources */,
 				E5D2ACC41C0403A0005C48E8 /* TBCrashKit.m in Sources */,
+				E5D2ACDD1C0446F6005C48E8 /* TBCrashTableViewController.m in Sources */,
 				E5D2ACAC1C0402C4005C48E8 /* main.m in Sources */,
 				E5D2ACD31C0441F5005C48E8 /* sqlService.m in Sources */,
 			);
