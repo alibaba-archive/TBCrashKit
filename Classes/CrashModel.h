@@ -10,7 +10,7 @@
 
 @interface CrashModel : NSObject
 
-@property (nonatomic, assign) NSInteger ID;
+@property int ID;
 @property (nonatomic, copy) NSString *bundleName;
 @property (nonatomic, copy) NSString *bundleVersion;
 

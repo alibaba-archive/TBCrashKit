@@ -58,4 +58,16 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView
+                  editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        [[[SqlService alloc] init] deleteCreashModel:self.dataSource[indexPath.row]];
+    }];
+    return @[action];
+}
+
 @end

@@ -187,4 +187,39 @@
 }
 
 
+- (BOOL )deleteCreashModel:(CrashModel *)model {
+    
+    if ([self openDB]) {
+        sqlite3_stmt *statement;//这相当一个容器，放转化OK的sql语句
+        //组织SQL语句
+        char *sql = "DELETE FROM crashTable where ID = ?";
+        
+        //将SQL语句放入sqlite3_stmt中
+        int success = sqlite3_prepare_v2(_database, sql, -1, &statement, NULL);
+        if (success != SQLITE_OK) {
+            NSLog(@"Error: failed to delete");
+            sqlite3_close(_database);
+            return NO;
+        }
+        sqlite3_bind_int(statement, 1, model.ID);
+        
+        //执行SQL语句。这里是更新数据库
+        success = sqlite3_step(statement);
+        //释放statement
+        sqlite3_finalize(statement);
+        
+        //如果执行失败
+        if (success == SQLITE_ERROR) {
+            NSLog(@"Error: failed to delete the database with message.");
+            //关闭数据库
+            sqlite3_close(_database);
+            return NO;
+        }
+        //执行成功后依然要关闭数据库
+        sqlite3_close(_database);
+        return YES;
+    }
+    return NO;
+}
+
 @end

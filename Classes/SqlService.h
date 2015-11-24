@@ -15,9 +15,16 @@
 @property (nonatomic) sqlite3 *database;
 
 //-(BOOL )createTestList:(sqlite3 *)db;//创建数据库
--(BOOL )insertCreashModel:(CrashModel *)model;//插入数据
-//-(BOOL )updateCreashModel:(CrashModel *)model;//更新数据
--(NSArray *)getCreashModels;//获取全部数据
-//- (BOOL )deleteCreashModel:(CrashModel *)model;//删除数据
+- (BOOL )insertCreashModel:(CrashModel *)model;
+- (BOOL )updateCreashModel:(CrashModel *)model;
 
+/**
+ *  delete the crash model by ID
+ *
+ *  @param model model
+ *
+ *  @return is successful
+ */
+- (BOOL )deleteCreashModel:(CrashModel *)model;
+- (NSArray *)getCreashModels;
 @end
