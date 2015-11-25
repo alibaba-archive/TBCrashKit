@@ -19,6 +19,7 @@
 		E5D2ACD41C0441F5005C48E8 /* CrashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD21C0441F5005C48E8 /* CrashModel.m */; };
 		E5D2ACDA1C0446D1005C48E8 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */; };
 		E5D2ACDD1C0446F6005C48E8 /* TBCrashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */; };
+		E5D2ACE01C0555EF005C48E8 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailTableViewController.m; path = ../../Classes/DetailTableViewController.m; sourceTree = "<group>"; };
 		E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBCrashTableViewController.m; path = ../../Classes/TBCrashTableViewController.m; sourceTree = "<group>"; };
 		E5D2ACDC1C0446F6005C48E8 /* TBCrashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBCrashTableViewController.h; path = ../../Classes/TBCrashTableViewController.h; sourceTree = "<group>"; };
+		E5D2ACDE1C0555EF005C48E8 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SortViewController.h; path = ../../Classes/SortViewController.h; sourceTree = "<group>"; };
+		E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SortViewController.m; path = ../../Classes/SortViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */,
 				E5D2ACD81C0446D1005C48E8 /* DetailTableViewController.h */,
 				E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */,
+				E5D2ACDE1C0555EF005C48E8 /* SortViewController.h */,
+				E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D2ACE01C0555EF005C48E8 /* SortViewController.m in Sources */,
 				E5D2ACDA1C0446D1005C48E8 /* DetailTableViewController.m in Sources */,
 				E5D2ACB21C0402C4005C48E8 /* ViewController.m in Sources */,
 				E5D2ACD41C0441F5005C48E8 /* CrashModel.m in Sources */,

@@ -9,10 +9,13 @@
 #import "TBCrashTableViewController.h"
 #import "SqlService.h"
 #import "DetailTableViewController.h"
+#import "SortViewController.h"
 
-@interface TBCrashTableViewController ()
+@interface TBCrashTableViewController ()<SortViewControllerDelegate>
 
 @property (nonatomic, strong)   NSArray *dataSource;
+@property (nonatomic, strong)   NSArray *filterDataSource;
+@property (nonatomic, strong)   NSArray *sortArray;
 
 @end
 
@@ -20,8 +23,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"崩溃列表";
     self.dataSource = [[[SqlService alloc] init] getCreashModels];
+    self.filterDataSource = self.dataSource;
+    NSMutableSet *set = [NSMutableSet new];
+    [self.dataSource enumerateObjectsUsingBlock:^(CrashModel  * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [set addObject:obj.exceptionName];
+    }];
+    
+    NSArray *sortDesc = @[[[NSSortDescriptor alloc] initWithKey:nil ascending:YES]];
+    self.sortArray = [[set copy] sortedArrayUsingDescriptors:sortDesc];
+    
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"筛选" style:UIBarButtonItemStyleDone target:self action:@selector(sortButtonTouch)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+}
+
+- (void)sortButtonTouch {
+    SortViewController *sortViewController = [[SortViewController alloc] init];
+    sortViewController.sortArray = self.sortArray;
+    sortViewController.delegate = self;
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:sortViewController] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,7 +57,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section {
-    return self.dataSource.count;
+    return self.filterDataSource.count;
 }
 
 
@@ -46,7 +67,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CrashCellIdentifer"];
     }
-    CrashModel *model = self.dataSource[indexPath.row];
+    CrashModel *model = self.filterDataSource[indexPath.row];
     cell.textLabel.text = model.exceptionName;
     return cell;
 }
@@ -54,7 +75,7 @@
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailTableViewController *detailViewController = [[DetailTableViewController alloc] init];
-    detailViewController.model = self.dataSource[indexPath.row];
+    detailViewController.model = self.filterDataSource[indexPath.row];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
@@ -68,6 +89,20 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
         [[[SqlService alloc] init] deleteCreashModel:self.dataSource[indexPath.row]];
     }];
     return @[action];
+}
+
+#pragma mark - SortViewController Delegate
+
+- (void)sortViewController:(SortViewController *)sortViewController
+             didSelectType:(NSString *)type {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"exceptionName == %@" argumentArray:@[type]];
+    self.filterDataSource = [self.dataSource filteredArrayUsingPredicate:predicate];
+    [self.tableView reloadData];
+}
+
+- (void)sortViewControllerFilterAll:(SortViewController *)sortViewController {
+    self.filterDataSource = self.dataSource;
+    [self.tableView reloadData];
 }
 
 @end
