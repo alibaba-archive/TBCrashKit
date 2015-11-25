@@ -24,9 +24,9 @@ Check out the Example project.
 
 #ScreenShot
 
-![https://raw.githubusercontent.com/teambition/TBCrashKit/master/list.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/list.png)
+![https://raw.githubusercontent.com/teambition/TBCrashKit/master/ScreenShot/list.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/ScreenShot/list.png)
 
-![https://raw.githubusercontent.com/teambition/TBCrashKit/master/detail.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/detail.png)
+![https://raw.githubusercontent.com/teambition/TBCrashKit/master/ScreenShot/detail.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/ScreenShot/detail.png)
 
 
 #License
