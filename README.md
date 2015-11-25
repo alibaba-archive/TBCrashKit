@@ -22,6 +22,12 @@ just one line in the `AppDelegate`
 #Demo
 Check out the Example project.
 
+#ScreenShot
+
+![https://raw.githubusercontent.com/teambition/TBCrashKit/master/list.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/list.png)
+
+![https://raw.githubusercontent.com/teambition/TBCrashKit/master/detail.png](https://raw.githubusercontent.com/teambition/TBCrashKit/master/detail.png)
+
 
 #License
 AutocompleteField is provided under the MIT License. See LICENSE for details.
