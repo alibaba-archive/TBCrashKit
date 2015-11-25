@@ -20,7 +20,47 @@
 		E5D2ACDA1C0446D1005C48E8 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */; };
 		E5D2ACDD1C0446F6005C48E8 /* TBCrashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */; };
 		E5D2ACE01C0555EF005C48E8 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */; };
+		E5D2AD761C05B3F8005C48E8 /* TBCrashKitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2AD751C05B3F8005C48E8 /* TBCrashKitFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D2AD7A1C05B3F8005C48E8 /* TBCrashKitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D2AD731C05B3F8005C48E8 /* TBCrashKitFramework.framework */; };
+		E5D2AD7C1C05B3F8005C48E8 /* TBCrashKitFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5D2AD731C05B3F8005C48E8 /* TBCrashKitFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5D2AD811C05B421005C48E8 /* TBCrashKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACC31C0403A0005C48E8 /* TBCrashKit.m */; };
+		E5D2AD831C05B421005C48E8 /* sqlService.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACCF1C0441F5005C48E8 /* sqlService.m */; };
+		E5D2AD851C05B421005C48E8 /* CrashModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD21C0441F5005C48E8 /* CrashModel.m */; };
+		E5D2AD871C05B421005C48E8 /* TBCrashTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDB1C0446F6005C48E8 /* TBCrashTableViewController.m */; };
+		E5D2AD891C05B421005C48E8 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACD91C0446D1005C48E8 /* DetailTableViewController.m */; };
+		E5D2AD8B1C05B421005C48E8 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */; };
+		E5D2AD8C1C05B435005C48E8 /* TBCrashKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACC21C0403A0005C48E8 /* TBCrashKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D2AD8D1C05B435005C48E8 /* SqlService.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACD01C0441F5005C48E8 /* SqlService.h */; };
+		E5D2AD8E1C05B435005C48E8 /* CrashModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACD11C0441F5005C48E8 /* CrashModel.h */; };
+		E5D2AD8F1C05B436005C48E8 /* TBCrashTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACDC1C0446F6005C48E8 /* TBCrashTableViewController.h */; };
+		E5D2AD901C05B436005C48E8 /* DetailTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACD81C0446D1005C48E8 /* DetailTableViewController.h */; };
+		E5D2AD911C05B436005C48E8 /* SortViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D2ACDE1C0555EF005C48E8 /* SortViewController.h */; };
+		E5D2AD921C05B461005C48E8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D2ACCD1C0433C0005C48E8 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5D2AD781C05B3F8005C48E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5D2AC9F1C0402C3005C48E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5D2AD721C05B3F8005C48E8;
+			remoteInfo = TBCrashKitFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5D2AD7B1C05B3F8005C48E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5D2AD7C1C05B3F8005C48E8 /* TBCrashKitFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E5D2ACA71C0402C4005C48E8 /* TBCrashKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBCrashKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +86,9 @@
 		E5D2ACDC1C0446F6005C48E8 /* TBCrashTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBCrashTableViewController.h; path = ../../Classes/TBCrashTableViewController.h; sourceTree = "<group>"; };
 		E5D2ACDE1C0555EF005C48E8 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SortViewController.h; path = ../../Classes/SortViewController.h; sourceTree = "<group>"; };
 		E5D2ACDF1C0555EF005C48E8 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SortViewController.m; path = ../../Classes/SortViewController.m; sourceTree = "<group>"; };
+		E5D2AD731C05B3F8005C48E8 /* TBCrashKitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TBCrashKitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5D2AD751C05B3F8005C48E8 /* TBCrashKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBCrashKitFramework.h; sourceTree = "<group>"; };
+		E5D2AD771C05B3F8005C48E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +96,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D2AD7A1C05B3F8005C48E8 /* TBCrashKitFramework.framework in Frameworks */,
 				E5D2ACCE1C0433C0005C48E8 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5D2AD6F1C05B3F8005C48E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D2AD921C05B461005C48E8 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +117,7 @@
 			children = (
 				E5D2ACCD1C0433C0005C48E8 /* libsqlite3.tbd */,
 				E5D2ACA91C0402C4005C48E8 /* TBCrashKit */,
+				E5D2AD741C05B3F8005C48E8 /* TBCrashKitFramework */,
 				E5D2ACA81C0402C4005C48E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E5D2ACA71C0402C4005C48E8 /* TBCrashKit.app */,
+				E5D2AD731C05B3F8005C48E8 /* TBCrashKitFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +175,33 @@
 			name = Class;
 			sourceTree = "<group>";
 		};
+		E5D2AD741C05B3F8005C48E8 /* TBCrashKitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E5D2AD751C05B3F8005C48E8 /* TBCrashKitFramework.h */,
+				E5D2AD771C05B3F8005C48E8 /* Info.plist */,
+			);
+			path = TBCrashKitFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E5D2AD701C05B3F8005C48E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D2AD761C05B3F8005C48E8 /* TBCrashKitFramework.h in Headers */,
+				E5D2AD8C1C05B435005C48E8 /* TBCrashKit.h in Headers */,
+				E5D2AD8D1C05B435005C48E8 /* SqlService.h in Headers */,
+				E5D2AD8E1C05B435005C48E8 /* CrashModel.h in Headers */,
+				E5D2AD8F1C05B436005C48E8 /* TBCrashTableViewController.h in Headers */,
+				E5D2AD901C05B436005C48E8 /* DetailTableViewController.h in Headers */,
+				E5D2AD911C05B436005C48E8 /* SortViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E5D2ACA61C0402C4005C48E8 /* TBCrashKit */ = {
@@ -131,15 +211,36 @@
 				E5D2ACA31C0402C4005C48E8 /* Sources */,
 				E5D2ACA41C0402C4005C48E8 /* Frameworks */,
 				E5D2ACA51C0402C4005C48E8 /* Resources */,
+				E5D2AD7B1C05B3F8005C48E8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E5D2AD791C05B3F8005C48E8 /* PBXTargetDependency */,
 			);
 			name = TBCrashKit;
 			productName = TBCrashKit;
 			productReference = E5D2ACA71C0402C4005C48E8 /* TBCrashKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E5D2AD721C05B3F8005C48E8 /* TBCrashKitFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D2AD7F1C05B3F8005C48E8 /* Build configuration list for PBXNativeTarget "TBCrashKitFramework" */;
+			buildPhases = (
+				E5D2AD6E1C05B3F8005C48E8 /* Sources */,
+				E5D2AD6F1C05B3F8005C48E8 /* Frameworks */,
+				E5D2AD701C05B3F8005C48E8 /* Headers */,
+				E5D2AD711C05B3F8005C48E8 /* Resources */,
+				E5D2AD931C05B48B005C48E8 /* Framework Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBCrashKitFramework;
+			productName = TBCrashKitFramework;
+			productReference = E5D2AD731C05B3F8005C48E8 /* TBCrashKitFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -151,6 +252,9 @@
 				ORGANIZATIONNAME = HarriesChen;
 				TargetAttributes = {
 					E5D2ACA61C0402C4005C48E8 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					E5D2AD721C05B3F8005C48E8 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -169,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				E5D2ACA61C0402C4005C48E8 /* TBCrashKit */,
+				E5D2AD721C05B3F8005C48E8 /* TBCrashKitFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -184,7 +289,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5D2AD711C05B3F8005C48E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5D2AD931C05B48B005C48E8 /* Framework Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Framework Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\n\n# Constants\nSF_TARGET_NAME=${PROJECT_NAME}\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\nFRAMEWORK_TARGET=TBCrashKitFramework\n\n\n# Take build target\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\necho \"Please choose iPhone simulator as the build target.\"\nexit 1\nfi\n\nIPHONE_DEVICE_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n\n# Build the other (non-simulator) platform\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/arm64\" SYMROOT=\"${SYMROOT}\" ARCHS='arm64' VALID_ARCHS='arm64' $ACTION\n\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\"  CONFIGURATION_BUILD_DIR=\"${IPHONE_DEVICE_BUILD_DIR}/armv7\" SYMROOT=\"${SYMROOT}\" ARCHS='armv7 armv7s' VALID_ARCHS='armv7 armv7s' $ACTION\n\n# Copy the framework structure to the universal folder (clean it first)\nrm -rf \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_TARGET}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_TARGET}.framework\"\n\n# Smash them together to combine all architectures\nlipo -create  \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_TARGET}.framework/${FRAMEWORK_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/arm64/${FRAMEWORK_TARGET}.framework/${FRAMEWORK_TARGET}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/armv7/${FRAMEWORK_TARGET}.framework/${FRAMEWORK_TARGET}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_TARGET}.framework/${FRAMEWORK_TARGET}\"\n\nmv \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_TARGET}.framework\" \"Framework/${PROJECT_NAME}.framework\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5D2ACA31C0402C4005C48E8 /* Sources */ = {
@@ -203,7 +332,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5D2AD6E1C05B3F8005C48E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D2AD811C05B421005C48E8 /* TBCrashKit.m in Sources */,
+				E5D2AD831C05B421005C48E8 /* sqlService.m in Sources */,
+				E5D2AD851C05B421005C48E8 /* CrashModel.m in Sources */,
+				E5D2AD871C05B421005C48E8 /* TBCrashTableViewController.m in Sources */,
+				E5D2AD891C05B421005C48E8 /* DetailTableViewController.m in Sources */,
+				E5D2AD8B1C05B421005C48E8 /* SortViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5D2AD791C05B3F8005C48E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5D2AD721C05B3F8005C48E8 /* TBCrashKitFramework */;
+			targetProxy = E5D2AD781C05B3F8005C48E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E5D2ACB31C0402C4005C48E8 /* Main.storyboard */ = {
@@ -327,6 +477,46 @@
 			};
 			name = Release;
 		};
+		E5D2AD7D1C05B3F8005C48E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBCrashKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.TBCrashKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5D2AD7E1C05B3F8005C48E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TBCrashKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harrieschen.TBCrashKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,6 +534,15 @@
 			buildConfigurations = (
 				E5D2ACBF1C0402C4005C48E8 /* Debug */,
 				E5D2ACC01C0402C4005C48E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D2AD7F1C05B3F8005C48E8 /* Build configuration list for PBXNativeTarget "TBCrashKitFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D2AD7D1C05B3F8005C48E8 /* Debug */,
+				E5D2AD7E1C05B3F8005C48E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

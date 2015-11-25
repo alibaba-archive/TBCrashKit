@@ -1,0 +1,6 @@
+framework module TBCrashKitFramework {
+  umbrella header "TBCrashKitFramework.h"
+
+  export *
+  module * { export * }
+}

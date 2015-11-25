@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TBCrashKitFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E5D2ACA61C0402C4005C48E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5D2AD721C05B3F8005C48E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
